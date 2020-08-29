@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    
+* {
+
+  margin:0;
+  padding:0;
+}
+
+
+
+html, body {
+  height:100%;
+  font-family:sans-serif;
+    
+}
+
+body { 
+ background:white;
+ display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+ 
+.episode-list {
+  
+  max-width:300px;
+  
+}
+
+.episode-list-item {
+  
+  display:flex;
+  padding: 10px 0;
+  border-bottom : 1px dashed #cecece;
+  justify-content: space-between;
+  align-items:center;
+ 
+  
+}
+
+.episode-list-item  .title {
+   margin-right: auto;
+   padding-left: 20px;
+   padding-right: 20px
+}
+.is-current .material-icons {
+  color:skyblue;
+  margin-right:10px;
+}
+.episode-list-item .position {
+  font-weight:bold;
+}
+ul {
+  list-style:none;
+}
+
+
+a {
+  color:black;
+  text-decoration:none;
+}
+
+
+  
+  </style>
+</head>
+<body>
+
+    <ul class="episode-list">
+        <li class="episode-list-item">
+            <span class="position">1</span>
+
+            <h4 class="title">
+                <a href="#">
+                    Babel Setup
+                </a>
+            </h4>
+
+            <span class="length">9:00</span>
+        </li>
+
+        <li class="episode-list-item is-current">
+            <span class="position">2</span>
+
+            <h4 class="title">
+                <a href="#">
+                    ES6 Compilation With Laravel Elixir
+                </a>
+            </h4>
+
+            <i class="material-icons">remove_red_eye</i>
+
+            <span class="length">10:02</span>
+        </li>
+
+        <li class="episode-list-item">
+            <span class="position">3</span>
+
+            <h4 class="title">
+                <a href="#">
+                    Babel Setup
+                </a>
+            </h4>
+
+            <span class="length">10:02</span>
+        </li>
+
+        <li class="episode-list-item">
+            <span class="position">4</span>
+
+            <h4 class="title">
+                <a href="#">
+                    Arrows
+                </a>
+            </h4>
+
+            <span class="length">7:41</span>
+        </li>
+    </ul>
+
+</body>
+</html>
