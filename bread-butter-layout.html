@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  <style>
+  * {
+ margin: 0;
+ padding: 0;
+}
+
+html, body {
+  height: 100%
+
+  
+    
+}
+body {
+  font-family: sans-serif;
+  
+}
+main {
+ margin-top:20px;
+  display:flex;
+  margin-bottom:auto;
+}
+main > aside {
+  margin-right:4em;
+  
+}
+ 
+@media screen and  (max-width:450px) {
+  main {
+     flex-direction: column-reverse;
+  }
+
+}
+ul {
+  list-style:none;
+
+  
+}
+ul li:not(:first-child)  {
+    padding-top:0em;
+    margin-top:1em
+}
+.container {
+  background:white;
+  min-height:90%;
+  max-width:700px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  
+}
+.container > * {
+    padding: 0 20px; 
+}
+
+.container header {
+  background: #eee;
+
+  
+}
+.footer {
+  background: #eee;
+  display:flex;
+  justify-content: space-between;
+  padding : 20px 20px
+}
+ 
+  
+  </style>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <header >
+            <h1>Flexbox practice</h1>
+        </header>
+
+        <main >
+            <aside>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </aside>
+
+            <div class="primary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <h5>Laracasts</h5>
+            <p>All Rights Reserved</p>
+        </footer>
+    </div>
+
+</body>
+</html>
